@@ -26,27 +26,27 @@ Mobile.tap(findTestObject('Login Page Objects/btn_CREATE A PROFILE'), 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_First Name'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_First Name'), 'lionel', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_First Name'), 'Aldira', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_Last Name'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_Last Name'), 'messi', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_Last Name'), 'Putra', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_Country'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_Country'), 'Argentina', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_Country'), 'Indonesia', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_Username'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_Username'), 'lionelmessi', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_Username'), 'aldiraputra', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_Password'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_Password'), 'lionelMessi10', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_Password'), 'aldiraputra02', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/input_Confirm Password'), 0)
 
-Mobile.setText(findTestObject('Create Profile Objects/input_Confirm Password'), 'lionelMessi10', 0)
+Mobile.setText(findTestObject('Create Profile Objects/input_Confirm Password'), 'aldiraputra02', 0)
 
 Mobile.tap(findTestObject('Create Profile Objects/btn_Create Profile'), 0)
 
