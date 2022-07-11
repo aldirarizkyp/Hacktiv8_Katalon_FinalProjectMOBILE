@@ -18,3 +18,14 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 CucumberKW.runFeatureFile('Include/features/MP-6 Aldiransyah Rizky Putra-TC Login Mobile.feature')
+
+Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('Login Page Objects/input_UsernameLogin'), 'aldirarizkyp', 0)
+
+Mobile.setText(findTestObject('Login Page Objects/input_PasswordLogin'), 'RigbBhfdqOBhBrv0e6YfUQ==', 0)
+
+Mobile.tap(findTestObject('Login Page Objects/btn_LOGIN'), 0)
+
+Mobile.verifyElementExist(findTestObject(null), 0)
+
