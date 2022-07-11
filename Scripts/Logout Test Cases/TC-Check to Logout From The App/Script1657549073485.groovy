@@ -23,29 +23,15 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 WebUI.callTestCase(findTestCase('Login Test Cases/MP-6 Aldiransyah Rizky Putra-TC Login Mobile'), [('username') : 'aldiraputra'
         , ('password') : 'MzwowwNMG4szpCX2z5ddwg=='], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Hamburger Menu Objects/btn_HamburgerMenu'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/btn_HamburgerMenu'), 0)
 
-Mobile.tap(findTestObject('Hamburger Menu Objects/menu_Accounts'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Hamburger Menu Objects/Accounts Page Objects/txtView_Accounts'), 0)
-
-Mobile.tap(findTestObject('Hamburger Menu Objects/Accounts Page Objects/btn_Add Account Plus Symbol'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Hamburger Menu Objects/Accounts Page Objects/txtView_Add an Account'), 0)
-
-Mobile.setText(findTestObject('Hamburger Menu Objects/Accounts Page Objects/input_ Account Name'), 'BCA', 0)
-
-Mobile.setText(findTestObject('Hamburger Menu Objects/Accounts Page Objects/input_Initial Balance'), '10000000', 0)
-
-Mobile.tap(findTestObject('Hamburger Menu Objects/Accounts Page Objects/btn_ADD'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/menu_Logout'), 0)
 
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
-
-def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Account successfully added\']')
-
-println('Toast : ' + toast)
+def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Logging out\']')
 
 if (toast == null) {
-    KeywordUtil.markFailed('ERROR: Toast object not found!')
+	KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
+
 
