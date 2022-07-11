@@ -27,5 +27,5 @@ Mobile.setEncryptedText(findTestObject('Login Page Objects/input_PasswordLogin')
 
 Mobile.tap(findTestObject('Login Page Objects/btn_LOGIN'), 0)
 
-Mobile.verifyElementExist(findTestObject('Dashboard Page Objects/txtView_GoodAfternoonAldira'), 0)
+Mobile.verifyElementExist(findTestObject('Dashboard Page Objects/txtView_Dashboard'), 0)
 
