@@ -49,3 +49,4 @@ if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
 
+driver.terminateApp('com.example.mikebanks.bankscorpfinancial')
