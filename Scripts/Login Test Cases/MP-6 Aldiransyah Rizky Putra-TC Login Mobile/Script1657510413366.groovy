@@ -21,7 +21,11 @@ CucumberKW.runFeatureFile('Include/features/MP-6 Aldiransyah Rizky Putra-TC Logi
 
 Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.clearText(findTestObject('Login Page Objects/input_UsernameLogin'), 0)
+
 Mobile.setText(findTestObject('Login Page Objects/input_UsernameLogin'), username, 0)
+
+Mobile.clearText(findTestObject('Login Page Objects/input_PasswordLogin'), 0)
 
 Mobile.setEncryptedText(findTestObject('Login Page Objects/input_PasswordLogin'), password, 0)
 

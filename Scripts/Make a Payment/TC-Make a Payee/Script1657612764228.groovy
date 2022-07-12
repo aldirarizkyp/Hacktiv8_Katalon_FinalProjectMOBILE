@@ -29,7 +29,7 @@ Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/menu_Make a 
 
 Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_AddPayee'), 0)
 
-Mobile.setText(findTestObject('Hamburger Menu Objects/Payment Page Object/input_Payee Name'), 'Internet ', 0)
+Mobile.setText(findTestObject('Hamburger Menu Objects/Payment Page Object/input_Payee Name'), payeeName, 0)
 
 Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_ADD'), 0)
 
@@ -42,4 +42,6 @@ println('Toast : ' + toast)
 if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
+
+driver.terminateApp('com.example.mikebanks.bankscorpfinancial')
 

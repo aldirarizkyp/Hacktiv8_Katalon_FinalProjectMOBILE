@@ -48,3 +48,4 @@ AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 def toast = driver.findElementByXPath('//android.widget.Toast[1]')
 
 
+driver.terminateApp('com.example.mikebanks.bankscorpfinancial')
