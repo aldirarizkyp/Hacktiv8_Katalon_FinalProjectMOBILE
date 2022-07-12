@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS-Make a Payment</name>
+   <name>TS-Transaction</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -15,7 +15,7 @@
       <guid>f547688b-4836-4a43-be48-d2346848603a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Make a Payment/TC-Make a Payee</testCaseId>
+      <testCaseId>Test Cases/Make a Payment Test Cases/TC-Make a Payee</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>4209e4a6-98cb-4c24-af63-a0649e4800cb</id>
@@ -37,7 +37,14 @@
       <guid>a70e841c-b0c1-41f1-9e0a-3270b1c9a2b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Make a Payment/TC-Check to Make a Payment with Payee from BCA</testCaseId>
+      <testCaseId>Test Cases/Make a Payment Test Cases/TC-Check to Make a Payment with Payee from BCA</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0493743e-71a8-46df-b620-126d9b517923</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Make a Transfer Test Cases/TC-Make an Interaccount Transfer From test bank to BCA</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
