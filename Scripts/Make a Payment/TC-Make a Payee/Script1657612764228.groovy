@@ -16,16 +16,30 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-CucumberKW.runFeatureFile('Include/features/MP-6 Aldiransyah Rizky Putra-TC Login Mobile.feature')
+WebUI.callTestCase(findTestCase('Login Test Cases/MP-6 Aldiransyah Rizky Putra-TC Login Mobile'), [('username') : 'aldiraputra'
+        , ('password') : 'MzwowwNMG4szpCX2z5ddwg=='], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/btn_HamburgerMenu'), 0)
 
-Mobile.setText(findTestObject('Login Page Objects/input_UsernameLogin'), username, 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/menu_Make a Payment'), 0)
 
-Mobile.setEncryptedText(findTestObject('Login Page Objects/input_PasswordLogin'), password, 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_AddPayee'), 0)
 
-Mobile.tap(findTestObject('Login Page Objects/btn_LOGIN'), 0)
+Mobile.setText(findTestObject('Hamburger Menu Objects/Payment Page Object/input_Payee Name'), 'Internet ', 0)
 
-Mobile.verifyElementExist(findTestObject('Dashboard Page Objects/txtView_Dashboard'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_ADD'), 0)
+
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+
+def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Payee Added Successfully\']')
+
+println('Toast : ' + toast)
+
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
 

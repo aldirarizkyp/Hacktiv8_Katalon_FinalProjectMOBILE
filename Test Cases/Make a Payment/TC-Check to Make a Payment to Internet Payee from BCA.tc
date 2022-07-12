@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC-Check Make a New Bank Account</name>
+   <name>TC-Check to Make a Payment to Internet Payee from BCA</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>93dfb689-39bf-422e-909e-d6d851d578e0</testCaseGuid>
+   <testCaseGuid>99ff4fea-b851-4c9e-b669-5188fb41aef7</testCaseGuid>
 </TestCaseEntity>
