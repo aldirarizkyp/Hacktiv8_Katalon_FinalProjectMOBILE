@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Summary: Aldiransyah Rizky Putra-TC Login Mobile  
+Description: This test case describes the positive case of logginh in in to the CobaApplication.</description>
+   <name>MP-6 Aldiransyah Rizky Putra-TC Login Mobile</name>
+   <tag>jira-integration</tag>
+   <integratedEntity>
+      <productName>JIRA</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;jiraIssue&quot;:{&quot;fields&quot;:{&quot;customFields&quot;:{&quot;customfield_10030&quot;:&quot;Feature: Login\n  Scenario: I want to login to the CobaApp.\n    Given I Open the App\n    And search for login button\n    And I entered my email and password\n    When tap login button\n    Then I managed to get into the app&quot;,&quot;customfield_10018&quot;:{&quot;hasEpicLinkFieldDependency&quot;:false,&quot;showField&quot;:false,&quot;nonEditableReason&quot;:{&quot;reason&quot;:&quot;PLUGIN_LICENSE_ERROR&quot;,&quot;message&quot;:&quot;The Parent Link is only available to Jira Premium users.&quot;}},&quot;customfield_10019&quot;:&quot;0|i0001j:&quot;},&quot;status&quot;:{&quot;id&quot;:10000,&quot;description&quot;:&quot;&quot;,&quot;iconUrl&quot;:&quot;https://timbelajar1.atlassian.net/&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/status/10000&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;project&quot;:{&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/project/10000&quot;,&quot;key&quot;:&quot;MP&quot;,&quot;id&quot;:10000,&quot;name&quot;:&quot;Mobile Project&quot;},&quot;components&quot;:[],&quot;summary&quot;:&quot;Aldiransyah Rizky Putra-TC Login Mobile  &quot;,&quot;description&quot;:&quot;This test case describes the positive case of logginh in in to the CobaApplication.&quot;,&quot;reporter&quot;:{&quot;emailAddress&quot;:&quot;aldiransyahrizky@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Aldiransyah Rizky&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/user?accountId\u003d622f0e355b6d710070a0475f&quot;},&quot;assignee&quot;:{&quot;emailAddress&quot;:&quot;aldiransyahrizky@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Aldiransyah Rizky&quot;,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/user?accountId\u003d622f0e355b6d710070a0475f&quot;},&quot;priority&quot;:{&quot;id&quot;:3,&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/priority/3&quot;,&quot;name&quot;:&quot;Medium&quot;},&quot;votes&quot;:{&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/issue/MP-6/votes&quot;,&quot;votes&quot;:0,&quot;hasVoted&quot;:false},&quot;fixVersions&quot;:[],&quot;subtasks&quot;:[],&quot;labels&quot;:[]},&quot;self&quot;:&quot;https://timbelajar1.atlassian.net/rest/api/2/issue/10008&quot;,&quot;key&quot;:&quot;MP-6&quot;,&quot;id&quot;:10008}}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>6e15e9d5-df9f-4f1b-9476-24786fb1ca68</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bf67da56-247e-4334-b3c0-ed5139b04e48</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8be334ab-b14b-45eb-8ef9-1b24d7820479</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'aldiraputra'</defaultValue>
+      <description></description>
+      <id>bf67da56-247e-4334-b3c0-ed5139b04e48</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'MzwowwNMG4szpCX2z5ddwg=='</defaultValue>
+      <description></description>
+      <id>8be334ab-b14b-45eb-8ef9-1b24d7820479</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

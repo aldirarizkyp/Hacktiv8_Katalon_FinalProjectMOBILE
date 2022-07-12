@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Make a Payee</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1f28fbf9-2cb0-4348-9ca7-a844ad671359</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8f81cf32-fece-4273-af5e-7107c73e95cf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8f81cf32-fece-4273-af5e-7107c73e95cf</id>
+      <masked>false</masked>
+      <name>payeeName</name>
+   </variable>
+</TestCaseEntity>

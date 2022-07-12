@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Make an Interaccount Transfer From test bank to BCA</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c9e849a-2da0-4e64-86fa-629666567478</testCaseGuid>
+</TestCaseEntity>
