@@ -25,26 +25,21 @@ WebUI.callTestCase(findTestCase('Login Test Cases/MP-6 Aldiransyah Rizky Putra-T
 
 Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/btn_HamburgerMenu'), 0)
 
-Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/menu_Make a Transfer'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Menu List Objects/menu_Make a Payment'), 0)
 
-Mobile.tap(findTestObject('Hamburger Menu Objects/Transfer Page Objects/btn_SpinnerSenderAcc'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_AddPayee'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Hamburger Menu Objects/Transfer Page Objects/listView_Sender'), 0)
+Mobile.setText(findTestObject('Hamburger Menu Objects/Payment Page Object/input_Payee Name'), 'Internet ', 0)
 
-Mobile.tap(findTestObject('Hamburger Menu Objects/Transfer Page Objects/txtView_test bank (8500000.00)'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Hamburger Menu Objects/Transfer Page Objects/btn_SpinnerReceiverAcc'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Hamburger Menu Objects/Transfer Page Objects/listView_Receiver'), 0)
-
-Mobile.tap(findTestObject('Hamburger Menu Objects/Transfer Page Objects/txtView_BCA (10000000.00)'), 2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.setText(findTestObject('Hamburger Menu Objects/Transfer Page Objects/input_Transfer Amount'), '15000', 0)
-
-Mobile.tap(findTestObject('Hamburger Menu Objects/Transfer Page Objects/btn_Confirm Transfer'), 0)
+Mobile.tap(findTestObject('Hamburger Menu Objects/Payment Page Object/btn_ADD'), 0)
 
 AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 
-def toast = driver.findElementByXPath('//android.widget.Toast[1]')
+def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Payee Added Successfully\']')
 
+println('Toast : ' + toast)
+
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
 
